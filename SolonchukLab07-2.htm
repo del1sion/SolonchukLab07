@@ -1,0 +1,92 @@
+<HTML>
+
+<HEAD>
+    <meta charset="UTF-8">
+    <TITLE>Елементи HTML-форми</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#E6F2FF">
+
+    <H2 ALIGN="CENTER">
+        Використання всіх основних елементів HTML-форми
+    </H2>
+
+    <FORM ACTION="forma_ok.htm" TARGET="_BLANK">
+
+        Ваше ім'я:
+        <INPUT TYPE="text" NAME="name" SIZE="30">
+        
+        <BR><BR>
+
+        Введіть пароль:
+        <INPUT TYPE="password" NAME="password" SIZE="15">
+
+        <BR><BR>
+
+        Ваша стать:
+
+        <INPUT TYPE="radio" NAME="sex" VALUE="male">
+        Чоловіча
+
+        <INPUT TYPE="radio" NAME="sex" VALUE="female">
+        Жіноча
+
+        <BR><BR>
+
+        Ваші навички:
+
+        <BR>
+
+        <INPUT TYPE="checkbox" NAME="html"> HTML
+        <BR>
+
+        <INPUT TYPE="checkbox" NAME="css"> CSS
+        <BR>
+
+        <INPUT TYPE="checkbox" NAME="js"> JavaScript
+        <BR>
+
+        <INPUT TYPE="checkbox" NAME="networks"> Комп'ютерні мережі
+
+        <BR><BR>
+
+        Оберіть курс:
+
+        <SELECT NAME="course">
+            <OPTION>1 курс</OPTION>
+            <OPTION>2 курс</OPTION>
+            <OPTION>3 курс</OPTION>
+            <OPTION>4 курс</OPTION>
+        </SELECT>
+
+        <BR><BR>
+
+        Напишіть декілька слів про себе:
+
+        <BR>
+
+        <TEXTAREA NAME="about" ROWS="5" COLS="50"></TEXTAREA>
+
+        <BR><BR>
+
+        Прикріпити файл:
+
+        <INPUT TYPE="file" NAME="file">
+
+        <BR><BR>
+
+        <INPUT TYPE="button"
+               VALUE="Показати дату"
+               ONCLICK="alert(Date());">
+
+        <BR><BR>
+
+        <INPUT TYPE="submit" VALUE="Відіслати дані">
+
+        <INPUT TYPE="reset" VALUE="Очистити форму">
+
+    </FORM>
+
+</BODY>
+
+</HTML>

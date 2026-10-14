@@ -1,0 +1,84 @@
+<HTML>
+
+<HEAD>
+    <meta charset="UTF-8">
+    <TITLE>Замовлення товару</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#E6F2FF">
+
+<H2 ALIGN="CENTER">
+    Форма замовлення товару
+</H2>
+
+<FORM ACTION="forma_ok.htm" TARGET="_BLANK">
+
+    Номер банківського рахунку:
+    <INPUT TYPE="text" NAME="account" SIZE="30">
+
+    <BR><BR>
+
+    Особистий номер користувача:
+    <INPUT TYPE="text" NAME="usernumber" SIZE="30">
+
+    <BR><BR>
+
+    Оберіть товар:
+
+    <BR>
+
+    <SELECT NAME="products" SIZE="5" MULTIPLE>
+        <OPTION VALUE="laptop">Ноутбук</OPTION>
+        <OPTION VALUE="mouse">Комп'ютерна миша</OPTION>
+        <OPTION VALUE="keyboard">Клавіатура</OPTION>
+        <OPTION VALUE="monitor">Монітор</OPTION>
+        <OPTION VALUE="headphones">Навушники</OPTION>
+    </SELECT>
+
+    <BR><BR>
+
+    Коментар до замовлення:
+
+    <BR>
+
+    <TEXTAREA NAME="comment" ROWS="5" COLS="50"></TEXTAREA>
+
+    <BR><BR>
+
+    Вид оплати:
+
+    <BR>
+
+    <INPUT TYPE="radio" NAME="payment" VALUE="cash">
+    Готівковий розрахунок
+
+    <BR>
+
+    <INPUT TYPE="radio" NAME="payment" VALUE="cashless">
+    Безготівковий розрахунок
+
+    <BR><BR>
+
+    Яку додаткову інформацію Ви бажаєте отримати?
+
+    <BR>
+
+    <INPUT TYPE="checkbox" NAME="balance" VALUE="yes">
+    Дані про залишки на рахунку
+
+    <BR>
+
+    <INPUT TYPE="checkbox" NAME="payments" VALUE="yes">
+    Список останніх виплат по рахунку
+
+    <BR><BR>
+
+    <INPUT TYPE="submit" VALUE="Відправити замовлення">
+
+    <INPUT TYPE="reset" VALUE="Очистити форму">
+
+</FORM>
+
+</BODY>
+
+</HTML>

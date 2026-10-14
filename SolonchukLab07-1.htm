@@ -1,0 +1,62 @@
+<HTML>
+
+<HEAD>
+    <meta charset="UTF-8">
+    <TITLE>Створення форми</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#E6F2FF">
+
+    <H2 ALIGN="CENTER">
+        Лабораторна робота №7. Створення форми
+    </H2>
+
+    <FORM ACTION="forma_ok.htm" TARGET="_BLANK">
+
+        <PRE>
+
+Ваше ім'я:
+<INPUT NAME="name" TYPE="text" MAXLENGTH="40" SIZE="40">
+
+Ваша стать:
+<INPUT TYPE="radio" NAME="pol" VALUE="male"> Чоловіча
+<INPUT TYPE="radio" NAME="pol" VALUE="female"> Жіноча
+
+На якому курсі Ви навчаєтесь?
+<SELECT NAME="curs" SIZE="1">
+    <OPTION VALUE="1" SELECTED>Перший</OPTION>
+    <OPTION VALUE="2">Другий</OPTION>
+    <OPTION VALUE="3">Третій</OPTION>
+    <OPTION VALUE="4">Четвертий</OPTION>
+    <OPTION VALUE="5">П'ятий</OPTION>
+</SELECT>
+
+Які дисципліни ви вивчаєте на курсі?
+
+<INPUT TYPE="checkbox" NAME="web" VALUE="yes" CHECKED> WEB-програмування
+<INPUT TYPE="checkbox" NAME="network" VALUE="yes"> Комп'ютерні мережі
+<INPUT TYPE="checkbox" NAME="database" VALUE="yes"> Бази даних
+<INPUT TYPE="checkbox" NAME="programming" VALUE="yes"> Програмування
+
+Напишіть декілька слів про себе:
+
+        </PRE>
+
+        <TEXTAREA NAME="about" ROWS="6" COLS="60"></TEXTAREA>
+
+        <BR><BR>
+
+        <INPUT TYPE="submit" VALUE="Відіслати дані">
+
+        <INPUT TYPE="reset" VALUE="Очистити форму">
+
+        <BR><BR>
+
+        Прикріпити файл:
+        <INPUT TYPE="file" NAME="friend" SIZE="50">
+
+    </FORM>
+
+</BODY>
+
+</HTML>
